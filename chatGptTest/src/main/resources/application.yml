@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-m2puq51a.sql.tencentcdb.com:23560/springboot_demo
+    username: root
+    password: e54hDHYT
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+
+
+#Mybatis 配置
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  configuration:
+    # 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射
+    map-underscore-to-camel-case: false
