@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://sh-cynosdbmysql-grp-m2puq51a.sql.tencentcdb.com:23560/springboot_demo
+    url: jdbc:mysql://sh-cynosdbmysql-grp-m2puq51a.sql.tencentcdb.com:23560/chatgpt_test
     username: root
     password: e54hDHYT
   mvc:
